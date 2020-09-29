@@ -1,11 +1,7 @@
-import React from 'react';
+import React from "react";
 
-const Home = ()=>{
-    return(
-        <h1 className='homeTemp'>
-            Welcome to NeXart
-        </h1>
-    )
-}
+const Home = () => {
+  return <h1 className="homeTemp"> </h1>;
+};
 
 export default Home;

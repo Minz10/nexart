@@ -1,29 +1,32 @@
-import React from 'react';
-import {Link} from "react-router-dom";
+import React from "react";
+import { Link } from "react-router-dom";
 
-const Navbar = () =>{
-    return (
-      <nav>
-        <div className="nav-wrapper">
-          <Link to="/" className="brand-logo left">
+const Navbar = () => {
+  return (
+    <nav>
+      <div className="nav-wrapper">
+        <div className="container">
+          <Link to="/" className="brand-logo black-text left">
             NeXart
           </Link>
-          <ul id="nav-mobile" className="right">
+          <ul className="right  black-text">
             <li>
-              <Link to="sass.html">Sass</Link>
+              <Link className="black-text" to="badges.html">
+                About
+              </Link>
             </li>
             <li>
-              <Link to="badges.html">Components</Link>
-            </li>
-            <li>
-              <Link to="/Login">Login</Link>
+              <Link to="/Login" class="btn">
+                Login
+              </Link>
             </li>
           </ul>
         </div>
-      </nav>
-    );
-}
+      </div>
+    </nav>
+  );
+};
 
 export default Navbar;
 
- 
+//brand-logo left-align
