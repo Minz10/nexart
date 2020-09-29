@@ -3,7 +3,7 @@ import React from 'react';
 const Home = ()=>{
     return(
         <h1 className='homeTemp'>
-            Welcome to NeXart
+            WELCOME TO NEXART!!!
         </h1>
     )
 }
