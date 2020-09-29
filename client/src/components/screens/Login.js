@@ -23,11 +23,11 @@ const Login = () => {
           Login
         </button>
 
-        <div className="form-link">
+        <div>
           <Link>Forgot Password?</Link>
         </div>
 
-        <div >
+        <div>
           <Link to="/Signup"> Create an account</Link>
         </div>
       </div>
