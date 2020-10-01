@@ -8,8 +8,9 @@ import "./App.css";
 
 function App() {
   return (
+    <>
     <BrowserRouter>
-      <Navbar />
+      <Navbar /> 
       <Route exact path="/">
         <Home />
       </Route>
@@ -18,9 +19,11 @@ function App() {
       </Route>
       <Route path="/Signup">
         <Signup />
-      </Route>
+      </Route> 
     </BrowserRouter>
+    </>
   );
 }
 
 export default App;
+ 

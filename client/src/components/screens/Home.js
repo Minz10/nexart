@@ -1,7 +1,13 @@
 import React from "react";
+import Grid from "../Grids";
 
 const Home = () => {
-  return <h1 className="homeTemp"> </h1>;
+  return (
+    <>
+      <Grid />
+    </>
+  )
+
 };
 
 export default Home;

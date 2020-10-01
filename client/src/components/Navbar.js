@@ -6,13 +6,13 @@ const Navbar = () => {
     <nav>
       <div className="nav-wrapper">
         <div className="container">
-          <Link to="/" className="brand-logo black-text left">
+          <Link to="/" className="brand-logo white-text left">
             NeXart
           </Link>
-          <ul className="right  black-text">
+          <ul className="right white-text">
             <li>
-              <Link className="black-text" to="badges.html">
-                About
+              <Link className="white-text" to="badges.html">
+                ABOUT
               </Link>
             </li>
             <li>
