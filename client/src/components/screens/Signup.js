@@ -3,22 +3,43 @@ import { Link } from "react-router-dom";
 
 const Signup = () => {
   return (
-    <div className="mycard">
-      <div className="card auth-card">
-        <h2 className="brand-logo">NeXart</h2>
-        <input type="text" placeholder="username" />
+    <div className="main_div">
+      <div className="box">
+        <h1>Create your account</h1>
+        <form>
+          <div className="inputBox">
+            <input
+              type="text"
+              name="email"
+              autoComplete="off"
+              required
+            ></input>
+            <label>email</label>
+          </div>
 
-        <input type="text" placeholder="email" />
+          <div className="inputBox">
+            <input
+              type="text"
+              name="username"
+              autoComplete="off"
+              required
+            ></input>
+            <label>username</label>
+          </div>
 
-        <input type="text" placeholder="password" />
+          <div className="inputBox">
+            <input
+              type="password"
+              name="password"
+              autoComplete="off"
+              required
+            ></input>
+            <label>password</label>
+          </div>
 
-        <button
-          className="btn waves-effect waves-light"
-          type="submit"
-          name="action"
-        >
-          Create Account
-        </button>
+          <input type="submit" value="Create"></input>
+ 
+        </form>
       </div>
     </div>
   );
