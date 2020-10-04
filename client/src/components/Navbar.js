@@ -3,30 +3,33 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav>
-      <div className="nav-wrapper">
-        <div className="container">
-          <Link to="/" className="brand-logo white-text left">
-            NeXart
-          </Link>
-          <ul className="right white-text">
+    <div className="container">
+      <div className="navbar">
+        <Link to="/" className="brand ">
+          NeXart
+        </Link>
+        <nav>
+          <ul id="menuList">
             <li>
-              <Link className="white-text" to="badges.html">
-                ABOUT
+              <Link to="/" className="navbar-links">
+                {" "}
+                About{" "}
               </Link>
             </li>
             <li>
-              <Link to="/Login" class="btn">
-                Login
+              <Link to="./Login" className="navbar-links">
+                <button className="btn-login"> Login </button>
               </Link>
             </li>
           </ul>
-        </div>
+        </nav>
+        <img src={require("./menu-icon.png")} className="menu-icon" />
       </div>
-    </nav>
+    </div>
   );
 };
 
 export default Navbar;
 
-//brand-logo left-align
+// brand-logo left-align
+// My icons collection
