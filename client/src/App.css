@@ -5,19 +5,7 @@
 .brand {
   font-size: 40px;
 }
-
-.mycard{
-  margin-top: 50px;
-   
-}
-
-.auth-card{
-  padding: 80px;
-  text-align: center;
-  max-width: 400px;
-  margin: 15px auto;
-}
-
+ 
 .container{
   width:100%;
   min-width: 100vh;
@@ -136,14 +124,6 @@ nav ul li{
 }
 
 
-/*
-.img-1{
-  height:70%;
-  position: absolute;
-  top:100px;
-  right: 180px;
-}
-*/
 
 /*CSS for the login-form */
 .main_div{
