@@ -10,7 +10,8 @@ const requireLogin = require('../middleware/requireLogin')
 router.get('/protected',requireLogin,(req,res)=>{
     res.send("Hello User");
 })
- 
+
+//SignUp Route
 router.post('/signup',(req,res)=>{
     const {name,email,password}= req.body;
     if(!email || !password || !name){
@@ -48,6 +49,7 @@ router.post('/signup',(req,res)=>{
       });
 })
 
+//SignIn Route
 router.post('/signin',(req,res)=>{
     const {email,password} = req.body
     if(!email || !password){

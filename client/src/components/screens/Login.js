@@ -10,11 +10,11 @@ const Login = () => {
           <div className="inputBox">
             <input
               type="text"
-              name="username"
+              name="email"
               autoComplete="off"
               required
             ></input>
-            <label>username</label>
+            <label>email</label>
           </div>
 
           <div className="inputBox">
