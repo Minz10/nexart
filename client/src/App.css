@@ -1,28 +1,219 @@
 @import url('https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap');
-
-.brand-logo{
-  font-family: 'Emilys Candy', cursive;
-}
-
-.brand-logo-form{
-  font-family: 'Emilys Candy', cursive;
-}
-
-.mycard{
-  margin-top: 50px;
-   
-}
-
-.homeTemp{
-  text-align: center;
-  font-family: 'Times New Roman', Times, serif;
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Eczar:wght@400;500&family=Mulish:ital,wght@1,300&display=swap');
+ 
+.brand {
+  font-size: 40px;
 }
  
-.auth-card{
-  padding: 80px;
-  text-align: center;
-  max-width: 400px;
-  margin: 15px auto;
+.container{
+  width:100%;
+  min-width: 100vh;
+  padding-left: 8%;
+  padding-right: 8%;
+  box-sizing: border-box;
+  overflow:hidden;
 }
 
+.navbar {
+  width:100%;
+  display:flex;
+  align-items: center;
+}
+ 
+.brand{
+  text-decoration: none;
+  color: black;
+}
+
+.menu-icon{
+  width: 25px;
+  cursor: pointer;
+  margin: 25px 0;
+  display: none;
+}
+
+nav{
+  flex: 1;
+  text-align: right;
+}
+
+nav ul li{
+  list-style: none;
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.navbar-links{
+  text-decoration: none;
+  color: black;
+  font-size: 23px;
+}
+.navbar-links:hover{
+  color: indigo;
+}
+
+.row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0px;
+}
+
+.content {
+  flex-basis: 40%;
+  position: relative;
+  margin-left: 300px;
+  top: 80px; 
+}
+ 
+.content h1{
+  font-size: 60px;
+  font-weight: 100;
+  margin-top:100px;
+  margin-bottom: 15px;  
+  color: black;
+}
+
+.content p{
+  font-size: 22px;
+  font-weight: 100;
+  margin-top:20px;
+  margin-bottom: 15px; 
+  color: black;
+}
+
+.btn{
+  display: inline-block;
+  background: linear-gradient(45deg, #87adfe, #ff77cd);
+  border-radius: 10px;
+  padding: 10px 10px;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: black;
+  box-shadow: 3px 8px 22px rgba(94,28,68,0.15);
+  cursor: pointer;
+  border-color: white;
+  font-size: 20px;
+} 
+
+.btn-login{
+  display: inline-block;
+  background: linear-gradient(45deg, #50b899, #3ecece);
+  border-radius: 8px;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: white;
+  box-shadow: 3px 8px 22px rgba(94,28,68,0.15);
+  cursor: pointer;
+  border-color: white;
+  font-size: 20px;
+}
+ 
+.Image {
+  height: 90%;
+  position: absolute;
+  bottom: 0;
+  top: 130px;
+  right: 0px;
+}
+
+.Image .img-1 {
+  width: 50%;
+}
+
+
+
+/*CSS for the login-form */
+.main_div{
+  width:100%;
+  height: 100vh;
+  position: relative;
+}
+.box{
+  width:320px;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 50px;
+  background: rgba(240, 232, 232, 0.8);
+  border-radius: 10px;
+  text-align: center;
+}
+.box h1{
+  margin-bottom: 30px;
+  color: black;
+  text-align: center;
+}
+
+ 
+.box .inputBox{
+  position: relative;
+}
+.box .inputBox input{
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  color: black;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid black;
+  background: transparent;
+  outline: none;
+}
+.box .inputBox label{
+  position: absolute;
+  top:0;
+  left:0;
+  letter-spacing: 1px;
+  padding:10px 0;
+  font-size: 16px;
+  color: black;
+  transition: 0.3s;
+}
+.box .inputBox input:focus ~ label,
+.box .inputBox input:valid ~ label{
+  top: -20px;
+  left: 0;
+  color: #487a91;
+  font-size: 12px;
+}
+
+.box input[type="submit"]{
+  border: none;
+  outline: none;
+  margin: 20px auto;
+  background: linear-gradient(45deg, #45aa8c, #2cb6b6);
+  padding: 8px 16px;
+  border: 2px solid ;
+  border-radius: 10px;
+  width: 80px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  color:white;
+}
+
+.box input[type="submit-1"]{
+  border: none;
+  outline: none;
+  margin: 30px auto;
+  background: linear-gradient(45deg, #45aa8c, #2cb6b6);
+  padding: 10px 16px;
+  border: 2px solid ;
+  border-radius: 10px;
+  width: 112px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  color:white;
+}
+
+.box .login-link{
+  text-decoration: none;
+  color: black;
+}
  
