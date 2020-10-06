@@ -1,7 +1,32 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React,{useState} from "react";
+import { useHistory } from "react-router-dom";
 
 const Signup = () => {
+  const history = useHistory();
+  const [name, setName] = useState("");
+  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState("");
+
+  const PostData = ()=>{
+    fetch("/signup", {
+      method: "post",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name,
+        password,
+        email,
+      }),
+    })  .then((res) => res.json())
+      .then((data) => {
+        if (data.error) {
+          console.log("Enter all the fields!!!!");
+        }
+        history.push("/Login");
+      })   
+  }
+
   return (
     <div className="main_div">
       <div className="box">
@@ -13,6 +38,8 @@ const Signup = () => {
               name="email"
               autoComplete="off"
               required
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
             ></input>
             <label>email</label>
           </div>
@@ -23,6 +50,8 @@ const Signup = () => {
               name="username"
               autoComplete="off"
               required
+              value={name}
+              onChange={(e) => setName(e.target.value)}
             ></input>
             <label>username</label>
           </div>
@@ -33,12 +62,13 @@ const Signup = () => {
               name="password"
               autoComplete="off"
               required
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
             ></input>
             <label>password</label>
           </div>
 
-          <input type="submit" value="Create"></input>
- 
+          <input type="submit" value="Create" onClick={()=>PostData()}></input>
         </form>
       </div>
     </div>
