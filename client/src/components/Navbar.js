@@ -23,7 +23,7 @@ const Navbar = () => {
             </li>
           </ul>
         </nav>
-        <img src={require("./menu-icon.png")} className="menu-icon" />
+        {/*<img src={require("./menu-icon.png")} className="menu-icon" /> */}
       </div>
     </div>
   );
