@@ -3,6 +3,7 @@ import {Link} from "react-router-dom";
 
 const Login = () => {
   return (
+    
     <div className="main_div">
       <div className="box">
         <h1>Login</h1>
@@ -14,7 +15,7 @@ const Login = () => {
               autoComplete="off"
               required
             ></input>
-            <label>email</label>
+            <label>email</label>  
           </div>
 
           <div className="inputBox">
