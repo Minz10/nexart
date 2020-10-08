@@ -1,8 +1,11 @@
 import React,{useState} from "react";
-import { useHistory } from "react-router-dom";
+///import { useHistory } from "react-router-dom";
+import { createBrowserHistory } from "history";
+
+
 
 const Signup = () => {
-  const history = useHistory();
+  const history = createBrowserHistory();
   const [name, setName] = useState("");
   const [password, setPassword] = useState("");
   const [email, setEmail] = useState("");
@@ -18,13 +21,16 @@ const Signup = () => {
         password,
         email,
       }),
-    })  .then((res) => res.json())
-      .then((data) => {
-        if (data.error) {
-          console.log("Enter all the fields!!!!");
-        }
-        history.push("/Login");
-      })   
+    }).then((res) => res.json())
+    .then((data) => {
+      if (data.error) {
+        console.log("Enter all the fields!!!!");
+      }
+      else{
+        console.log("Saved successfully.");
+        history.push("/");
+      }
+     })   
   }
 
   return (
