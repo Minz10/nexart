@@ -29,7 +29,7 @@ router.post('/signup',(req,res)=>{
         .then(hashedpassword=>{
             const user = new User({
                 email,
-                password:hashedpassword,
+                password:hashedpassword, 
                 name,
             });
 

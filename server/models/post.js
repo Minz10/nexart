@@ -1,4 +1,5 @@
 const mongoose = require('mongoose')
+const {objectId} = mongoose.Schema.Types
 //const {ObjectID} = mongoose.Schema.Types 
 
 const postSchema = new mongoose.Schema({
