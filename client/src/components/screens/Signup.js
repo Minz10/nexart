@@ -1,9 +1,6 @@
 import React,{useState} from "react";
 ///import { useHistory } from "react-router-dom";
 import { createBrowserHistory } from "history";
-
-
-
 const Signup = () => {
   const history = createBrowserHistory();
   const [name, setName] = useState("");
