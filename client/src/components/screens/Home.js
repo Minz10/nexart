@@ -10,8 +10,16 @@ const Home = () => {
           <h1>
             Welcome to <br /> NeXart
           </h1>
+<<<<<<< HEAD
           <p>A platform designed for your talent to grow.</p>
  
+=======
+          <p>A platform designed for your talent to be recognised.</p>
+
+ 
+
+
+>>>>>>> 64f42423ff278c64f4ee877ad01df5324815ac4b
           <Link to="/Signup">
             <button className="btn"> Get Started </button>
           </Link>

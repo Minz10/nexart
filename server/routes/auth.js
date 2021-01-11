@@ -29,7 +29,7 @@ router.post('/signup',(req,res)=>{
         .then(hashedpassword=>{
             const user = new User({
                 email,
-                password:hashedpassword,
+                password:hashedpassword, 333
                 name,
             });
 
@@ -64,7 +64,12 @@ router.post('/signin',(req,res)=>{
                 //res.json({message:"successfully signed in"})
                 const token = jwt.sign({id:savedUser._id}, JWT_SECRET)
                 const {_id,name,email} = savedUser
+<<<<<<< HEAD
                 res.json({token, user:{_id,name,email}})
+=======
+                res.json({token,user:{_id,name,email}})
+
+>>>>>>> 64f42423ff278c64f4ee877ad01df5324815ac4b
             }
             else{
                 return res.status(422).json({error:"Invalid Email/Password"})
