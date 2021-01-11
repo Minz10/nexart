@@ -27,7 +27,9 @@ const Signup = () => {
         console.log("Saved successfully.");
         history.push("/");
       }
-     })   
+     }) .catch(err=>{
+       console.log(err)
+     })  
   }
 
   return (
