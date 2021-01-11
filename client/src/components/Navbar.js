@@ -1,7 +1,9 @@
-import React from "react";
+import React, {useContext} from "react";
 import { Link } from "react-router-dom";
+import {UserContext} from '../App'
 
 const Navbar = () => {
+
   return (
     <div className="container">
       <div className="navbar">
@@ -11,7 +13,7 @@ const Navbar = () => {
         <nav>
           <ul id="menuList">
             <li>
-              <Link to="/" className="navbar-links">
+              <Link to="./Profile" className="navbar-links">
                 {" "}
                 About{" "}
               </Link>

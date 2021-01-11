@@ -27,8 +27,8 @@ app.use(require('./routes/auth'))
 app.use(require('./routes/post'))
 
 app.listen(PORT,()=>{
-    console.log("Home")
-    console.log("Server is running on",PORT)
+    console.log("Server is running on",PORT);
+    console.log("Server listens, then responds. Be like a server."); 
 })
 
 /*const customMiddleware = (req,res,next)=>{ //syntax to use middleware

@@ -10,15 +10,8 @@ const Home = () => {
           <h1>
             Welcome to <br /> NeXart
           </h1>
-          <p>A platform designed for your talent to be recognised.</p>
-<<<<<<< HEAD
-
+          <p>A platform designed for your talent to grow.</p>
  
-
-
-=======
-               
->>>>>>> 6d621b5195dcc46919c68c954abb110b3c542a98
           <Link to="/Signup">
             <button className="btn"> Get Started </button>
           </Link>
@@ -26,6 +19,12 @@ const Home = () => {
         <div className="Image">
           <img className="img-1" src={require("../1.jpg")} />
         </div>
+      </div>
+
+      <div style={{margin:"400px 690px"}}>
+        <Link to="/Homepage">
+            <button className="btn"> Test ride </button>
+          </Link>
       </div>
     </>
   );

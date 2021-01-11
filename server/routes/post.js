@@ -16,29 +16,30 @@ router.get('/allpost', (req,res)=>{
     })
 })
 
-router.route('/createpost').post(requireLogin,(req,res)=>{
-    const {title, body} = req.body
-    if(!title || !body){
+router.post('/createpost',requireLogin,(req,res)=>{
+    const {title,pic} = req.body
+    console.log(title,pic)
+    if(!title || !pic){
        return res.status(422).json({error: "Please add all the fields"});
     }
 
     //req.user.password = undefined;
     const post = new Post({
         title,
-        body,
-        postedBy: req.user
+        photo:pic,
+        postedBy:req.user
     })
     post.save().then(result =>{
         res.json({post:result})
     })
     .catch(err =>{
         console.log(err)
-    })
+    })  
 })
 
 router.get('/mypost',requireLogin, (req,res)=>{
-    Post.find({postedBy:req.user._id})
-    .populate("postedBy", "_id name")
+    Post.find({postedBy:req.user.s_id})
+    .populate("postedBy", "s_id name")
     .then(mypost=>{
         res.json({mypost})
     })
@@ -49,3 +50,7 @@ router.get('/mypost',requireLogin, (req,res)=>{
 
 
 module.exports = router
+
+
+    //console.log(req.user)
+    //res.send("ok")

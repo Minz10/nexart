@@ -216,4 +216,19 @@ nav ul li{
   text-decoration: none;
   color: black;
 }
+
+/*CSS for homepage */
  
+.home-card{
+  max-width: 500px;
+  height: max-content;
+  margin: 26px auto;
+}
+
+/*CSS for toasts */
+#toast-container{
+  top: 30px !important;
+  right: 20px !important;
+  left: auto !important
+
+}
